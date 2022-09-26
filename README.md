@@ -39,7 +39,8 @@ CMYK(Cyan, Magenta, Yellow, Black): 인쇄 재료의 색상 공간
 * 모든 색상 혼합-> 검정색
 * 인쇄(화면에서 볼 수 없는 프로젝트 디자인)
 * 브랜딩, 광고, 상품, 필수 재료
-* PDF, AI, EPS 
+* PDF, AI, EPS
+   [Matt Ellis, “RGBvsCMYK: What’s the difference?”, 99designs](https://99designs.com/blog/tips/correct-file-formats-rgb-and-cmyk/)
 
 색이 눈으로 들어오는 과정
 * 빛- 전자기파. 입자의 흐름, 파동
@@ -83,7 +84,8 @@ CMYK(Cyan, Magenta, Yellow, Black): 인쇄 재료의 색상 공간
 화이트
 * 거의 동일한 빛의 양이 민감한 원추 세포를 자극할 때 인식할 수 있음
 * 가시 스펙트럼의 모든 색상이 동일한 양으로 혼합되어 구성되어 있음
-* 백색광의 SPD는 직선  
+* 백색광의 SPD는 직선
+   [Introduction to Light, Color and Color Space, Scratchpixel](https://www.scratchapixel.com/lessons/digital-imaging/colors/introduction)
 
 What is the ALPHA?
 -------------
@@ -91,7 +93,8 @@ What is the ALPHA?
 -	Ed Catmull, Smith : 1970년대에 뉴욕 테크에서 통합 알파라는 개념(불투명성, 동등하게 투명성)을 발명->이미지에 포함-> 풀컬러('RGBA' 픽셀)
 -	RGB 이미지(적색, 녹색, 파랑)-> RGBA 이미지(적색, 녹색, 파랑, 알파)
 -	Alpha: 투과성(동등한 불투명도) 채널->보통 컬러 채널과 동일한 수의 비트를 포함 (8비트 알파채널은 256레벨, 투과율.0(완전투과)~255(완전불투명) / 10비트는 1024 수준의 투명성)
--	RGBA의 이미지-> 뉴욕테크, Lucasfilm, Pixar, Altamira, 디즈니 -> 현재 그래픽 커뮤니티에 의해 널리 지원 
+-	RGBA의 이미지-> 뉴욕테크, Lucasfilm, Pixar, Altamira, 디즈니 -> 현재 그래픽 커뮤니티에 의해 널리 지원
+   Smith, Alvy. (2000). Alpha and the History of Digital Compositing. pp-5.
   
 그림 3 ![image](https://user-images.githubusercontent.com/112869155/192256509-f2cca27d-9f63-4290-bb8c-4fe15d2056b4.png)
 
@@ -101,10 +104,12 @@ What is the color space?
 
 컬러 스페이스(색 공간): 시각적 평면에서 해석되고 표시될 수 있는 스펙트럼의 색상 범위
 -	RGB 색도도(色度圖)로 해석 -> 디지털/아날로그 이미지에 처리 및 표시됨 -> “gamuts” 
+   [Chris Heckmann, What is Color Space-Mastering Color in Post in Photo & Film, Studiobinder](https://www.studiobinder.com/blog/what-is-color-space-definition/)
 -	Gamut(색역): 특정 시스템에서 표현할 수 있는 가능한 색상의 범위 (red, green, blue->가장 단순한 색 가산 시스템의 기본색)
 -	XYZ 색상 -> xyY(색 공간 모델) : 인간 시야의 색역, 3D 공간에서 색상 표현
 -	xy 구성요소-> 색상의 색도 인코딩, Y(XYZ 색상공간)-> 색상의 휘도
--	CIE RGB 색상공간: 빨강, 녹색, 파랑의 단순한 조합으로 색상을 나타내는 선형 색상 공간 
+-	CIE RGB 색상공간: 빨강, 녹색, 파랑의 단순한 조합으로 색상을 나타내는 선형 색상 공간
+   [Introduction to Light, Color and Color Space, Scratchapixel](https://www.scratchapixel.com/lessons/digital-imaging/colors/color-space)
 그림 4 ![image](https://user-images.githubusercontent.com/112869155/192256773-847b1460-c0f9-4c10-96fc-1a67d299e3eb.png)
 
  
@@ -114,7 +119,8 @@ What is the color space?
 -	sRGB 표준화 -> 쉽게 색상 재현 (컬러 장치에 사용)
 -	디지털 카메라, 스캐너, 모니터, 프린터, 프로젝터 등
 -	색 영역의 면적 비율의 동일성 -> 동일한 색상 렌더링 기능 (X)
--	두가지 색 영역 비교 -> 커버리지 비율 확인 
+-	두가지 색 영역 비교 -> 커버리지 비율 확인
+   [BenQ Color Technology Lab, What is Color Gamut?, BenQ](https://www.benq.com/en-me/knowledge-center/knowledge/color-gamut-monitor.html
 
 	ACES 워크플로우
 -	아카데미 컬러 인코딩 시스템(ACES): 영화 예술 및 과학 아카데미의 후원 하에 개발된 무료, 확장 가능, 장치 독립적인 색상 관리 및 이미지 공유 시스템
