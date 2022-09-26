@@ -14,7 +14,8 @@ What is the color? What is Alpha? Omega?
 *	빛, 다양한 파장의 에너지로 이루어짐
 *	동공을 지나 안구 속 망막에 도달
 *	신경신호로 변환
-*	뇌에서 처리(뇌 속에서만 존재) 
+*	뇌에서 처리(뇌 속에서만 존재)
+   [Khan Academy Labs, “Color Science (Pixar in a Box)” Youtube] (https://youtu.be/0DXZvcfPVrk)
   
 그림 1
   ![image](https://user-images.githubusercontent.com/112869155/192253093-e7ca4756-9ded-444c-829f-87d12ca9f854.png)
