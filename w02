@@ -15,7 +15,9 @@ Figure 1![image](https://user-images.githubusercontent.com/112869155/192271966-a
 
 ## Gamma
 -------------
-컴퓨터 모니터, 프린터 또는 스캐너에 표시되는(또는 재현되는) 색 스펙트럼의 휘도 곡선 
+컴퓨터 모니터, 프린터 또는 스캐너에 표시되는(또는 재현되는) 색 스펙트럼의 휘도 곡선   
+[“What is Gamma?”, Guide To Camera](https://www.guidetocamera.com/glossary/gamma/)
+
 정의된 부분의 전체 범위(모든 값, 색)
 색상의 강도, 재현의 한계가 있음
 * 출력장치(모니터, TV) -> 잠재적 색도 구현
@@ -74,6 +76,7 @@ CRT 모니터에서 본 인코딩되지 않은 이미지
 * 더 높은 광도 수준에서 더 적은 톤이 있더라도 포스터라이제이션(posterization) 감지 못함
 * 더 적은 톤: 더 작은 파일 크기
 * 같은 수준의 이미지 품질-> 인코딩되지 않은 선형 파일과 비교해 파일 크기가 약 30% 감소 
+[“Understanding Gamma in Photography”, Japanistry.com](https://www.japanistry.com/understanding-gamma-in-photography/)
  
  ![image](https://user-images.githubusercontent.com/112869155/192272348-223dfa0e-4f3e-4796-8238-9785af48d76d.png)
 
