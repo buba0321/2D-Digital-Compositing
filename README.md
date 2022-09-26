@@ -1,5 +1,4 @@
 # 2D-Digital-Compositing
-C176034 김소현
 What is the color? What is Alpha? Omega?
 =============
 
