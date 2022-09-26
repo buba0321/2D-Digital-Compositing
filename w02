@@ -4,7 +4,8 @@ What is the color? What is Alpha? Omega?
 
 # Colorspace
 -------------
-Figure 1
+Figure 1![image](https://user-images.githubusercontent.com/112869155/192271966-a5189f95-a7e3-4c9e-b624-7b7011cad7de.png)
+
  
 	R/G/B/A : 우리 눈 세포가 가장 쉽게 반응하는 세가지 / 투명도 표현
 * RGB – 색공간의 색역을 정하는 삼원색
@@ -23,8 +24,8 @@ Figure 1
 * 백색광(광원): CIE 표준광 D65
 * 장치가 아직 충분하지 않음
 * CRT 모니터
- 
- 
+ ![image](https://user-images.githubusercontent.com/112869155/192272065-e848f099-de24-41a7-92da-5c77ad9a2a9c.png)
+ ![image](https://user-images.githubusercontent.com/112869155/192272093-6f884a8f-5a99-41a9-9977-56f87fe63701.png)
 
 감마 보정
 * 카메라가 기록하는 <선형 값 -> 비선형 관계>로 인코딩하는 작업
@@ -39,13 +40,21 @@ Figure 1
 * 오늘날: CRT (X) / 평면 스크린 모니터, 텔레비전 (O)-> 선형 응답
 * 감마 인코딩: 업계 표준 -> 디지털 이미지, 필름 프레임
 * CRT 디스플레이의 물리적 특성 -> 감마 인코딩된 신호를 상쇄 -> 선형 모니터, 텔레비전은 전자적으로 계산 취소 -> 최종 이미지 => 카메라의 원본 내용 정확히 표현
+* 
+![image](https://user-images.githubusercontent.com/112869155/192272119-b3ba608e-10dd-45e7-a30b-bd212ec0d1d5.png)
  
-감마 인코딩 및 후속 보정 프로세스 -> 모니터의 이미지, 인쇄 업계(JPEG)
-    
+감마 인코딩 및 후속 보정 프로세스 -> 모니터의 이미지, 인쇄 업계(JPEG)   
+
+ ![image](https://user-images.githubusercontent.com/112869155/192272172-f49dbc5d-c137-43f5-951c-a4fe44140324.png)
+ ![image](https://user-images.githubusercontent.com/112869155/192272194-d79c1bcc-5abe-49a2-ad07-fb09e695d90d.png)
 CRT 모니터에서 본 인코딩되지 않은 이미지
-   
+
+![image](https://user-images.githubusercontent.com/112869155/192272250-90364174-ee26-46a0-91a6-b7383d9e2060.png)
+![image](https://user-images.githubusercontent.com/112869155/192272265-82708730-e519-4993-a8da-e7f14f750b91.png)   
 수정되지 않은 모니터에서 본 인코딩된 이미지
    
+![image](https://user-images.githubusercontent.com/112869155/192272306-d4563d14-313d-41c0-8f97-7cc2e840776b.png)
+![image](https://user-images.githubusercontent.com/112869155/192272314-88fceb91-eb46-4aa8-96f7-a9368b1ae8e0.png)   
 감마 보정된 최종 JPEG 이미지
 
 감마 인코딩 및 히스토그램에 대한 논의 (인터넷)
@@ -66,6 +75,8 @@ CRT 모니터에서 본 인코딩되지 않은 이미지
 * 더 적은 톤: 더 작은 파일 크기
 * 같은 수준의 이미지 품질-> 인코딩되지 않은 선형 파일과 비교해 파일 크기가 약 30% 감소 
  
+ ![image](https://user-images.githubusercontent.com/112869155/192272348-223dfa0e-4f3e-4796-8238-9785af48d76d.png)
+
 	Linear – Workflow
 	
 ### Color Management
@@ -78,25 +89,33 @@ CRT 모니터에서 본 인코딩되지 않은 이미지
 * sRGB: 누구나 쉽게 접근 가능
 
 	Look Up Table (LUT) – 영화 색감 표현(투지, 코닥 필름)
+	![image](https://user-images.githubusercontent.com/112869155/192272379-a60d3638-2d1d-478d-b4dc-eab78d9194cb.png)
+
  
 * Input = output
 * f(x)=x
 * 8 bit -> 256,  10 bit -> 1024
  
+ ![image](https://user-images.githubusercontent.com/112869155/192272391-0703dd9e-9c8a-4ca6-8ae7-229976a2c5c8.png)
+
 * 밝아짐
 * Super white -> 모니터에 나타나지 않음
  
+ ![image](https://user-images.githubusercontent.com/112869155/192272408-60ebabc0-5d41-4356-a624-6a640e083c44.png)
+
 * 연속된 직선이 아님 -> 사용할 수 없음
 * 어두워짐
 * f(x)=x^2 로그함수 
 
 	디스플레이(display)
- 
+ ![image](https://user-images.githubusercontent.com/112869155/192272425-64016a5f-79f7-45f1-8d8b-12ad4aba0741.png)
+
 * 룩업테이블 -> <한 색상 -> 다른 색공간>
 * 변환이 크고 일관성이 낮음
 
 	장면(scene)
- 
+ ![image](https://user-images.githubusercontent.com/112869155/192272442-aa6f20b7-a5a7-4b5e-a56d-8320e09c9319.png)
+
 * 영상 변환 -> 마스터 색 공간(지정 디스플레이)
 * 단순하고 명확함
 
