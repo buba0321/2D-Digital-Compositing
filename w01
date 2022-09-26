@@ -1,0 +1,148 @@
+# 2D-Digital-Compositing
+What is the color? What is Alpha? Omega?
+=============
+
+#	COLOR
+-------------
+색(Color): 개인적, 주관적, 본능적
+색조(Hue): 색상환 내에서의 위치(계열)
+채도(Saturation): 색의 강렬한 정도
+명도(Value): 밝음과 어두움의 정도
+
+애니메이션 <UP>- 색에 의미를 포함시켜 이야기 창조와 전달
+*	빛, 다양한 파장의 에너지로 이루어짐
+*	동공을 지나 안구 속 망막에 도달
+*	신경신호로 변환
+*	뇌에서 처리(뇌 속에서만 존재)
+   [Khan Academy Labs, “Color Science (Pixar in a Box)” Youtube] (https://youtu.be/0DXZvcfPVrk)
+  
+그림 1
+  ![image](https://user-images.githubusercontent.com/112869155/192253093-e7ca4756-9ded-444c-829f-87d12ca9f854.png)
+
+ 
+
+색상 모드
+* RGB (Red, Green, Blue): 디지털 이미지의 색 공간
+* 디지털 작업에 적합
+* 웹 및 앱 디자인, 브랜딩, 소셜 미디어, 시각적 내용
+* JPEG, PSD, PNG, GIF
+* 빨강+초록=노랑
+* 빨강+파랑=보라
+* 파랑+초록=하늘
+* 초록+빨강=노랑
+* 빨강+파랑+초롱=흰색
+  
+CMYK(Cyan, Magenta, Yellow, Black): 인쇄 재료의 색상 공간
+* 감산 혼합: 실제 잉크와 다양한 각도로 결합하여 이미지 창조
+* 빈 흰색 레이어에서 시작
+* 모든 색상 혼합-> 검정색
+* 인쇄(화면에서 볼 수 없는 프로젝트 디자인)
+* 브랜딩, 광고, 상품, 필수 재료
+* PDF, AI, EPS
+   [Matt Ellis, “RGBvsCMYK: What’s the difference?”, 99designs](https://99designs.com/blog/tips/correct-file-formats-rgb-and-cmyk/)
+
+색이 눈으로 들어오는 과정
+* 빛- 전자기파. 입자의 흐름, 파동
+* 주기파(週期波): 파동의 형태가 반복되는 거리<-주파수(단위 시간당 주기가 반복되는 횟수)/파장(주파수의 역수)
+* 빛의 색 = 소리의 피치
+* 가시광선(사람의 눈으로 볼 수 있는 빛)의 파장: 380~800 (mm): 등적색, 등색, 황색, 녹색, 청색, 남색, 자색 (7가지)
+                                  
+그림 2
+                                    ![image](https://user-images.githubusercontent.com/112869155/192255431-438e74a6-9080-4fea-b1e1-510999cb60c0.png)
+
+ 
+프리즘을 이용하여 백색광을 무지개로 분해
+* 빛이 프리즘을 통과-> 빛의 분산 굴절하는 정도가 다르기 때문
+* 굴절하는 정도가 다르기 때문
+* 파장의 성분에 따라 속도가 다름
+* 파장이 길수록 굴절률이 작음 (굴절률: 빨간색<보라색)
+
+인간의 눈- 광수용체
+* 원뿔세포- 색각(색을 구별하는 감각) 담당, 망막의 중심을 향해 집중되어 있음
+* 막대세포- 망막의 바깥 가장자리 쪽으로 위치-> 적은 양의 빛에 더 민감
+  
+빛의 기여-> 가산적
+* 기본 색상: 빨강, 초록, 파랑 – 합칠 때 백색광 생성
+  
+페인트
+* 캔버스에서 반사되는 다른 광원(태양, 전구)에서 방출되는 빛-> 그림의 색상 감각
+* 백색광이 캔버스 표면에 닿음-> 그 빛의 일부는 페인트 층에 흡수/일부는 장면에 다시 반사
+  
+색상의 밝기
+* 모든 파장에 똑같지 민감 X
+* (일반적) 파란색-> 가장 어두운 색, 빨간색-> 가장 밝은 색
+* 555~560 mm 범위 내의 색상-> 가시 스펙트럼의 모든 색상 중 가장 밝은 것으로 인식
+* 광도 함수- 인간의 눈에 색상이 얼마나 밝게 보이는지 설명, 다른 파장의 빛에 대한 인간의 눈의 평균 시각 감도
+  
+스펙트럼 전력 분포(SPD)
++ 형광등) 대부분의 밝은 색상을 동일한 양으로 생성
+        스펙트럼의 일부 좁은 대역에서 약간의 스파이크
++ 백열등) 모든 빛 색상을 방출
+        스펙트럼의 왼쪽에서 오른쪽으로 이동함에 따라 강도가 증가함
+
+화이트
+* 거의 동일한 빛의 양이 민감한 원추 세포를 자극할 때 인식할 수 있음
+* 가시 스펙트럼의 모든 색상이 동일한 양으로 혼합되어 구성되어 있음
+* 백색광의 SPD는 직선
+   [Introduction to Light, Color and Color Space, Scratchpixel](https://www.scratchapixel.com/lessons/digital-imaging/colors/introduction)
+
+What is the ALPHA?
+-------------
+
+-	Ed Catmull, Smith : 1970년대에 뉴욕 테크에서 통합 알파라는 개념(불투명성, 동등하게 투명성)을 발명->이미지에 포함-> 풀컬러('RGBA' 픽셀)
+-	RGB 이미지(적색, 녹색, 파랑)-> RGBA 이미지(적색, 녹색, 파랑, 알파)
+-	Alpha: 투과성(동등한 불투명도) 채널->보통 컬러 채널과 동일한 수의 비트를 포함 (8비트 알파채널은 256레벨, 투과율.0(완전투과)~255(완전불투명) / 10비트는 1024 수준의 투명성)
+-	RGBA의 이미지-> 뉴욕테크, Lucasfilm, Pixar, Altamira, 디즈니 -> 현재 그래픽 커뮤니티에 의해 널리 지원
+   Smith, Alvy. (2000). Alpha and the History of Digital Compositing. pp-5.
+  
+그림 3 ![image](https://user-images.githubusercontent.com/112869155/192256509-f2cca27d-9f63-4290-bb8c-4fe15d2056b4.png)
+
+ 
+What is the color space?
+-------------
+
+컬러 스페이스(색 공간): 시각적 평면에서 해석되고 표시될 수 있는 스펙트럼의 색상 범위
+-	RGB 색도도(色度圖)로 해석 -> 디지털/아날로그 이미지에 처리 및 표시됨 -> “gamuts” 
+   [Chris Heckmann, What is Color Space-Mastering Color in Post in Photo & Film, Studiobinder](https://www.studiobinder.com/blog/what-is-color-space-definition/)
+-	Gamut(색역): 특정 시스템에서 표현할 수 있는 가능한 색상의 범위 (red, green, blue->가장 단순한 색 가산 시스템의 기본색)
+-	XYZ 색상 -> xyY(색 공간 모델) : 인간 시야의 색역, 3D 공간에서 색상 표현
+-	xy 구성요소-> 색상의 색도 인코딩, Y(XYZ 색상공간)-> 색상의 휘도
+-	CIE RGB 색상공간: 빨강, 녹색, 파랑의 단순한 조합으로 색상을 나타내는 선형 색상 공간
+   [Introduction to Light, Color and Color Space, Scratchapixel](https://www.scratchapixel.com/lessons/digital-imaging/colors/color-space)
+그림 4 ![image](https://user-images.githubusercontent.com/112869155/192256773-847b1460-c0f9-4c10-96fc-1a67d299e3eb.png)
+
+ 
+	Gamut(색영역)
+-	삼차원 그래프
+-	색조, 채도, 밝기로 구성
+-	sRGB 표준화 -> 쉽게 색상 재현 (컬러 장치에 사용)
+-	디지털 카메라, 스캐너, 모니터, 프린터, 프로젝터 등
+-	색 영역의 면적 비율의 동일성 -> 동일한 색상 렌더링 기능 (X)
+-	두가지 색 영역 비교 -> 커버리지 비율 확인
+   [BenQ Color Technology Lab, What is Color Gamut?, BenQ](https://www.benq.com/en-me/knowledge-center/knowledge/color-gamut-monitor.html
+
+	ACES 워크플로우
+-	아카데미 컬러 인코딩 시스템(ACES): 영화 예술 및 과학 아카데미의 후원 하에 개발된 무료, 확장 가능, 장치 독립적인 색상 관리 및 이미지 공유 시스템
+  
+기능
+-	다양한 색상, 빛, 노출
+-	다양한 디스플레이 장치에서 예측 가능한 이미지 디스플레이
+-	전체 범위의 하이라이트, 그림자, 색상 유지
+-	다른 카메라에서 이미지 매칭의 단순화
+-	정확한 색상 표시
+-	선형 색상 공간에서 작업
+-	이미지의 밝은 영역에 과도한 강조 표시 및 클램프 없음
+  
+구성 요소
+-	IDT(입력 장치 변환): 입력 재료의 색상 변환
+-	RRT(참조 렌더링 변환): S자형 톤 곡선을 사용하여 장면 참조 공간->디스플레이 참조 공간 (색상 변환, 출력을 위한 이미지 준비)
+-	ODT(출력 장치 변환): Rec.와 같은 변환인 출력 장치로 변환
+  
+주요 색상 공간
+-	ACES 2065-1: 사람의 눈보다 넓은 범위의 선형) 색 공간이므로 보관용 복사 및 부서 간 자료 전송에 사용
+-	ACESss 및 ACEScct: 색상 보정을 위한 대수 색상 공간
+-	ACEScg: CG/VFX 작업을 위한 선형 공간
+-	Scene-linear Rec.709-sRGB: Rec.709 또는 sRGB 기본 색역을 사용하는 선형 이미지에 대해 선택
+-	RAW: 변환이 필요하지 않은 이미지용(스칼라 마스크, 변위, 거칠기)
+-	sRGB: sRGB 이미지 텍스처에 권장되는 색상 공간 8-16비트(JPEG, PNG)
+-	ACEScg: 이미 ACEScg로 변환된 이미지의 색 공간 
